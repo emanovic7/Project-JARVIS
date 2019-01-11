@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Weather from './Weather';
-import Stocks from './Stocks'
+import Weather from './components/Weather';
+import Stocks from './components/Stocks'
 import Geolocation from './Geolocation'
 
 import './App.css';

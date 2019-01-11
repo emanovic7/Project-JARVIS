@@ -11,18 +11,8 @@ class App extends Component {
       <div className="App">
 
       <h3>
-        Emmanuel Owusu
+        JARVIS
       </h3>
-
-        <div className = "work-profiles">
-          <a className="github-link" href="https://github.com/emanovic7" target="_blank" rel="noopener noreferrer">
-            Github
-          </a><br />
-          <a className="linkedin-link" href="https://www.linkedin.com/in/emmanuel-owusu-007/" target="_blank" rel="noopener noreferrer">
-            LinkedIn
-          </a>
-        </div>
-
 
           <Weather />
           <Stocks />

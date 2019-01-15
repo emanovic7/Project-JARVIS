@@ -14,4 +14,4 @@ class Events extends React.Component {
 }
 
 
-import default Events;
+export default Events;

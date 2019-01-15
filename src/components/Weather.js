@@ -43,7 +43,6 @@ class Weather extends React.Component{
     return(
       <div>
       <h4>Weather:</h4>
-      <input type="text" value="search by city"></input>
         {
           this.state.temperature.degrees && this.state.temperature.degrees.map((item, id) =>
             <p key={id}>{item.main} -- {item.description}</p>)
@@ -52,7 +51,7 @@ class Weather extends React.Component{
           <p>City: {this.state.temperature && this.state.temperature.city}</p>
           <p>Wind Speed: {this.state.temperature.wind && this.state.temperature.wind.speed}</p>
 
-          
+
 
       </div>
     )

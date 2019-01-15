@@ -23,6 +23,7 @@ class Stocks extends React.Component {
   render(){
     return(
       <div>
+      <h3>Stocks</h3>
         <p>{this.state.stock && this.state.stock.bpi.USD.rate}</p>
         <p>{this.state.stock && this.state.stock.chartName}</p>
       </div>

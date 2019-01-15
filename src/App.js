@@ -17,7 +17,6 @@ class App extends Component {
 
           <Weather />
           <Stocks />
-          <Geolocation />
           <News />
 
       </div>

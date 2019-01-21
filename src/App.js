@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
+
+import MainGrid from './components/MainGrid'
 import Weather from './components/Weather';
 import Stocks from './components/Stocks'
 import Geolocation from './Geolocation'
 import News from './components/News'
-
 import './App.css';
 
 class App extends Component {
@@ -11,13 +12,11 @@ class App extends Component {
     return (
       <div className="App">
 
-      <h3>
+      <h2>
         JARVIS
-      </h3>
+      </h2>
 
-          <Weather />
-          <Stocks />
-          <News />
+          <MainGrid />
 
       </div>
     );

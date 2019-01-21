@@ -14,4 +14,4 @@ class Sports extends React.Component {
 }
 
 
-import default Sports;
+export default Sports;

@@ -1,10 +1,22 @@
 import React, {Component} from 'react';
 
 
-const API_KEY = 'Kfg1YEF9WJPxRhohDn8CewihpqhCID7h4hHv3VHu'
+const API_KEY = 'cHRDUDR5MBi7ogGzfZEwWp6PduelOK'
 
 
 class Events extends React.Component {
+
+  constructor(){
+    super()
+    this.state ={
+      event: ''
+    }
+  }
+
+  componentDidMount(){
+    fetch('')
+
+  }
 
   render(){
     return(

@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {Button} from 'semantic-ui-react'
 
 const API_KEY = '8aef1181042e4066a428c268e4e1078d'
 
@@ -27,6 +28,7 @@ class News extends React.Component {
       <ol>
         {this.state.news && this.state.news.slice(0,5).map((item) => <li><p>{item.title}</p></li>)}
       </ol>
+      <Button>Update</Button>
       </div>
     )
   }

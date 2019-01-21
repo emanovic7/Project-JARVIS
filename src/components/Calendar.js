@@ -2,16 +2,16 @@ import React, {Component} from 'react';
 
 
 
-class Sports extends React.Component {
+class Calendar extends React.Component {
 
   render(){
     return(
       <div>
-        <p>Scores</p>
+        Calendar
       </div>
     )
   }
 }
 
 
-export default Sports;
+export default Calendar;

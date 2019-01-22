@@ -24,8 +24,41 @@ class Activity extends React.Component {
     this.setState({
       activeIndex: newIndex
     })
-    alert('sports')
   }
+
+  handleEvents = (event, titleProps) => {
+    const {index} = titleProps
+    const {activeIndex} = this.state
+    const newIndex = activeIndex === index ? -1 : index
+
+    this.setState({
+      activeIndex: newIndex
+    })
+  }
+
+  handleTraffic = (event, titleProps) => {
+    const {index} = titleProps
+    const {activeIndex} = this.state
+    const newIndex = activeIndex === index ? -1 : index
+
+    this.setState({
+      activeIndex: newIndex
+    })
+  }
+
+  handleRestaurants = (event, titleProps) => {
+    const {index} = titleProps
+    const {activeIndex} = this.state
+    const newIndex = activeIndex === index ? -1 : index
+
+    this.setState({
+      activeIndex: newIndex
+    })
+  }
+
+
+
+
 
   render(){
     const {activeIndex} = this.state
@@ -39,8 +72,37 @@ class Activity extends React.Component {
                 </Accordion.Title>
                 <Accordion.Content active={activeIndex === 0}>
                   <p>
-                    A dog is a type of domesticated animal. Known for its loyalty and faithfulness, it can
-                    be found as a welcome guest in many households across the world.
+                    Return Sports API
+                  </p>
+                </Accordion.Content>
+
+                <Accordion.Title active={activeIndex === 1} index={1} onClick={this.handleEvents}>
+                  <Icon name='dropdown' />
+                  Events Near Me
+                </Accordion.Title>
+                <Accordion.Content active={activeIndex === 1}>
+                  <p>
+                    Return Events API
+                  </p>
+                </Accordion.Content>
+
+                <Accordion.Title active={activeIndex === 2} index={2} onClick={this.handleTraffic}>
+                  <Icon name='dropdown' />
+                  Traffic
+                </Accordion.Title>
+                <Accordion.Content active={activeIndex === 2}>
+                  <p>
+                    Return Traffic API
+                  </p>
+                </Accordion.Content>
+
+                <Accordion.Title active={activeIndex === 3} index={3} onClick={this.handleRestaurants}>
+                  <Icon name='dropdown' />
+                  Restaurants near me
+                </Accordion.Title>
+                <Accordion.Content active={activeIndex === 3}>
+                  <p>
+                    Return Restaurants API
                   </p>
                 </Accordion.Content>
 

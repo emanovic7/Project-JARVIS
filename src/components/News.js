@@ -28,7 +28,7 @@ class News extends React.Component {
       <ol>
         add link to read "read"{this.state.news && this.state.news.slice(0,5).map((item) => <li><p>{item.title}</p></li>)}
       </ol>
-      <Button>Update</Button>
+      <Button content="World" /><Button content="Science"/><Button content="Politics"/><Button content="Entertainment"/>
       </div>
     )
   }

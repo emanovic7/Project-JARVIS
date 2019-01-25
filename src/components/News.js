@@ -19,7 +19,8 @@ class News extends React.Component {
     .then(response => response.json())
     .then(({articles}) => this.setState({
         isLoaded: true,
-        news: articles
+        news: articles,
+        search: ''
       }),
       (error) => {
         this.setState({
@@ -30,7 +31,7 @@ class News extends React.Component {
     );
   };
 
-  handleTechnology = () => {
+  handleSearch = (event) => {
     function componentDidMount(){
       fetch('https://newsapi.org/v2/sources?apiKey=8aef1181042e4066a428c268e4e1078d')
       .then(response => response.json())
@@ -60,7 +61,7 @@ class News extends React.Component {
               add link to read "read"{this.state.news && this.state.news.slice(0,5).map((item) => <li><p>{item.title}</p></li>)}
             </ol>
         </div>
-        <Search aligned="left" value="filter by subject"/>
+        <Search aligned="left" label="filter by subject" onChange={this.handleSearch}/>
       </React.Fragment>
     )
   }

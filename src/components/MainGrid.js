@@ -33,8 +33,16 @@ const MainGrid = () => (
 
     </Grid.Row>
 
-    <Grid columns={1} >
-      <Calendar />
+    <Grid columns={2} >
+      <Grid.Row stretched>
+        <Grid.Column>
+          <Calendar />
+        </Grid.Column>
+
+        <Grid.Column>
+          Tasks
+        </Grid.Column>
+      </Grid.Row>
     </Grid>
   </Grid>
 )
